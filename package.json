@@ -1,0 +1,18 @@
+{
+  "name": "songjeehooncomp1537assignment5",
+  "version": "1.0.0",
+  "main": "assignment5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon assignment5.js"
+  },
+  "author": "Greg Song",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

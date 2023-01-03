@@ -1,0 +1,465 @@
+body {
+  background-color: rgba(0,32,91,0.1);
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4, h5, p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h5 {
+  font-size: 14pt;
+}
+
+#main {
+  /* height: 100px; */
+  /* background-color: #ECECEC; */
+}
+
+header {
+  height: 500px;
+  position: relative;
+}
+
+#banner-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.95), 
+    rgba(0, 0, 0, 0.8)
+  ), url(/img/rogers-arena.jpeg);
+  background-position: center;
+  height: 80%;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+}
+
+
+#navbar {
+  height: 20%;
+  width: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* border-bottom: 1px solid white; */
+  display: inline-flex;
+  color: white;
+  justify-content: space-between;
+}
+
+#nav-el-container {
+  height: 100%;
+  width: 50%;
+  /* display: flex;
+  justify-content: flex-end;
+   */
+}
+
+#nav-el-icon {
+  display: none;
+}
+
+#navbar-ul {
+  margin-right: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  height: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#navbar-ul > li {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40px; */
+  padding: 10px;
+  transition: 0.3s;
+}
+
+li:hover {
+  background-color:rgba(0, 136, 82, 1);
+  border-radius: 5px;
+}
+
+#logo-container {
+  height: 100%;
+  /* width: 20%; */
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#canucks-logo {
+  height: 60%;
+  width: auto;
+  margin: 0 auto;
+}
+
+#banner-grid {
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  height: 80%;
+}
+
+#banner-left {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#banner-img {
+  height: 400px;
+  width: auto;
+  /* margin: 0 auto;
+  display: flex; */
+  margin-left: 10px
+}
+#banner-right {
+  grid-column: 2 / 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#banner-right-box {
+  height: 50%;
+  width: 80%;
+  color: white;
+  margin: auto 10px;
+}
+
+#line-container {
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#line {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+}
+
+#banner-right-box > p {
+  /* border-top: 1px solid white; */
+  font-weight: 700;
+  font-family: 'nhl-vancouver-regular', sans-serif;
+}
+
+#canucks-logo-word {
+  width: 100%;
+}
+
+button {
+  background-color: rgba(0, 136, 82, 1);
+  border: none;
+  color: white;
+  /* padding: 15px 30px; */
+  margin-top: 10px;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  /* transition: width 2s, height 0.5s; */
+  transition: background-color, border;
+}
+
+button:hover {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid rgba(0, 136, 82, 1);
+}
+
+#header-bottom {
+  height: 100px;
+  background-color: rgba(0,32,91,1);
+  /* background-image: linear-gradient(to right, rgba(0,0,0,0.95),rgba(0,32,91)); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+#header-bottom-br {
+  /* background-color: rgba(0,32,91,0.9); */
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+}
+
+#header-bottom-br img {
+  width: auto;
+  height: 80px;
+  background-color: rgba(0,32,91,0.9);
+}
+
+/* main */
+.image-container {
+  width: 98%;
+  margin: 10px auto;
+  position: relative;
+}
+
+.image-container > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-text-container {
+  position: absolute;
+  width: calc(100% - 10px);
+  bottom: 0px;
+  padding: 20px 0;
+  /* left: 10px; */
+  color: white;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 10px;
+}
+
+.image-text-container > h4 {
+  font-size: 20pt;
+  font-weight: 500;
+}
+
+#leaderboards-container {
+  width: 98%;
+  margin: 10px auto;
+}
+
+#leaderboards-container .card:first-of-type {
+  border-top: none;
+}
+
+/* leaderboards */
+.card {
+  background-color: white;
+  height: 100px;
+  border-top: 1px solid rgb(151, 153, 155);
+}
+
+.card-img-container {
+  width: 100px;
+  height: 100%;
+  float: left;
+  display: flex;
+}
+
+.card-img-container > img {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid rgb(151, 153, 155);
+}
+
+.card-text-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-text-player {
+  margin-left: 20px;
+}
+
+.card-text-stat {
+  margin-right: 20px;
+  text-align: right;
+}
+
+.card h4 {
+  font-size: 10pt;
+}
+.card h5 {
+  font-size: 12pt;
+}
+.card p {
+  font-size: 9pt;
+}
+
+/* standings */
+#standings-container {
+  width: 98%;
+  margin: 10px auto;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+  /* box-shadow:2px 2px 5px 5px rgba(0, 0, 0, 0.3); */
+}
+
+thead > tr {
+  background-color: black;
+  color: white;
+}
+
+tbody > tr:hover {
+  background-color: #d2d2d2;
+}
+
+th {
+  font-weight: 300;
+  text-align: center;
+}
+
+th:first-of-type {
+  text-align: left;
+  padding-left: 10px;
+}
+
+tr {
+  text-align: center;
+  height: 40px;
+  background-color: #eee;
+}
+
+.standings-team-container {
+  display: flex;
+  padding-left: 20px;
+  height: 40px;
+  background-color: #e1e1e1;
+
+}
+
+.standings-team {
+  display: flex;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+
+.standings-team span {
+  margin-left: 16px;
+}
+
+.team-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.standings-team-logo {
+  width: 25px;
+  margin: auto 0;
+}
+
+/* footer */
+footer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 1fr;
+  justify-content: center;
+  background-color: rgba(0,32,91,1);
+}
+
+footer > p {
+  grid-row: 2;
+  grid-column: 1/ span 2;
+  color: #dedede;
+  padding: 10px;
+}
+
+#copyright-container {
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+#copyright-container li {
+  list-style: none;
+  color: #dedede;
+}
+
+#footer-logo {
+  padding: 10px;
+}
+#footer-logo > img {
+  width: 100px;
+  margin: auto;
+  grid-row: 1 / 3;
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  #logo-container {
+    height: 60px;
+    margin-left: 10px;
+  }
+
+  #nav-el-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-el-container > ul {
+    display: none;
+  }
+
+  #nav-el-icon {
+    display: block;
+  }
+
+  #nav-el-icon > a {
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin: auto 0;
+  }
+  footer {
+    font-size: 10pt;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #banner-left {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .image-container {
+    grid-column: 1;
+    grid-row: 1;
+    /* position: block; */
+  }
+
+  #leaderboards-container {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    width: 98%;
+  }
+  #standings-container {
+    grid-column: 1;
+    grid-row: 2;
+    width: 98%;
+    margin: auto;
+  }
+}
